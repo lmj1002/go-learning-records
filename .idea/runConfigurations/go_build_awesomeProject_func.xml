@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="go build awesomeProject/func" type="GoApplicationRunConfiguration" factoryName="Go Application" singleton="false" nameIsGenerated="true">
+    <module name="awesomeProject" />
+    <working_directory value="$PROJECT_DIR$" />
+    <kind value="FILE" />
+    <package value="awesomeProject/func" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/func/func.go" />
+    <method v="2" />
+  </configuration>
+</component>
