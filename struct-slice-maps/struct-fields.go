@@ -23,4 +23,12 @@ func main() {
 	p.Y = 10086
 	//如果我们有一个指向结构体的指针 p，那么可以通过 (*p).X 来访问其字段 X。不过这么写太啰嗦了，所以语言也允许我们使用隐式间接引用，直接写 p.X 就可以。
 	fmt.Println(p, v, x, y, n)
+
+	//切片的零值是 nil。 nil 切片的长度和容量为 0 。且没有底层数组
+
+	var s []int
+	fmt.Println(s, len(s), cap(s))
+	if s == nil {
+		fmt.Println("nil!")
+	}
 }

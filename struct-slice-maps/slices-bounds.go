@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func printSlice(s []int) {
+func PrintSlice(s []int) {
 	fmt.Printf("len=%d cap = %d %v \n", len(s), cap(s), s)
 }
 
@@ -16,9 +16,21 @@ func main() {
 	//c := s[:]
 	//fmt.Println(a, b, c)
 	s = s[:0] // 截取切片使其长度为 0
-	printSlice(s)
+	PrintSlice(s)
 	s = s[:4] // 拓展其长度
-	printSlice(s)
+	PrintSlice(s)
 	s = s[2:] // 舍弃前两个值
-	printSlice(s)
+	PrintSlice(s)
+
+	a := make([]int, 5)
+	printSlice("a", a)
+
+	b := make([]int, 0, 5)
+	printSlice("b", b)
+
+	c := b[:2]
+	printSlice("c", c)
+
+	d := c[2:5]
+	printSlice("d", d)
 }
